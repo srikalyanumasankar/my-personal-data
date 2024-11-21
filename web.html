@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Kalyan Umasankar's personal website showcasing biodata, ambitions, theories, and interests in physics and astronomy.">
+    <title>Sri Kalyan Umasankar - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sri Kalyan Umasankar</h1>
+        <p>Passionate Learner | Aspiring Theoretical Physicist | Quantum Thinker</p>
+    </header>
+    <nav>
+        <button onclick="showSection('bio')">Bio Data</button>
+        <button onclick="showSection('contact')">Contact Info</button>
+        <button onclick="showSection('ambitions')">Ambitions</button>
+        <button onclick="showSection('theories')">Theories</button>
+        <button onclick="showSection('hobbies')">Hobbies</button>
+        <button onclick="showSection('inspirations')">Inspirations</button>
+    </nav>
+    <main>
+        <!-- Biodata Section -->
+        <section id="bio">
+            <h2>Bio Data</h2>
+            <img src="profile.jpg" alt="Sri Kalyan Umasankar" class="profile-image">
+            <p>
+                <strong>Name:</strong> Sri Kalyan Umasankar<br>
+                <strong>Location:</strong> Ambasamudram, Tirunelveli, Tamil Nadu, India<br>
+                <strong>Education:</strong> 10th Standard, Cambridge International Senior Secondary School (CBSE).<br>
+                <strong>Subjects:</strong> Mathematics and Biology.<br>
+                <strong>Skills:</strong> 
+                <ul>
+                    <li>Problem-solving and scientific reasoning.</li>
+                    <li>Research skills and a strong foundation in theoretical physics.</li>
+                    <li>Proficiency in mathematics and analytical thinking.</li>
+                </ul>
+            </p>
+        </section>
+        
+        <!-- Contact Info Section -->
+        <section id="contact" style="display: none;">
+            <h2>Contact Info</h2>
+            <p><strong>Email:</strong> srikalyanumasankar5@gmail.com</p>
+            <p><strong>Phone:</strong>9597575847</p>
+        </section>
+        
+        <!-- Ambitions Section -->
+        <section id="ambitions" style="display: none;">
+            <h2>Ambitions</h2>
+            <p>
+                My ambition is to crack JEE Advanced and gain admission to one of India’s premier institutes like IITs, particularly for theoretical physics or engineering physics. 
+            </p>
+            <p>
+                I aspire to pursue advanced research in:
+                <ul>
+                    <li><strong>Theoretical Physics:</strong> Understanding the nature of the universe, from the smallest subatomic particles to the grand scale of cosmology.</li>
+                    <li><strong>Quantum Mechanics:</strong> Delving deeper into interpretations and applications of quantum theory to explain the fabric of reality.</li>
+                    <li><strong>Mathematics:</strong> Mastering the tools required to model complex physical phenomena and solve abstract problems.</li>
+                </ul>
+            </p>
+        </section>
+        
+        <!-- Theories Section -->
+        <section id="theories" style="display: none;">
+            <h2>My Theories</h2>
+            <article>
+                <h3>Critique of the Many-Worlds Interpretation (MWI)</h3>
+                <p>
+                    The Many-Worlds Interpretation suggests that every quantum possibility is realized in separate branches of the universe. For example, in Schrödinger's cat experiment, one universe has a live cat, and another has a dead cat. While this is an elegant solution to avoid wave function collapse, I raise the following critical question:
+                </p>
+                <p>
+                    If all possibilities exist in parallel universes, why can't we interact with alternate versions of ourselves? If my alternate self exists in a parallel universe, there should theoretically be some observable effect or interaction, even if indirect. The complete lack of such evidence undermines the plausibility of this interpretation.
+                </p>
+            </article>
+            <article>
+                <h3>Reinterpreting Schrödinger's Cat Experiment</h3>
+                <p>
+                    The Schrödinger's cat thought experiment presents a cat in a superposition of being alive and dead until observed. However, I argue that the cat itself serves as an observer. 
+                </p>
+                <p>
+                    Inside the box, numerous quantum interactions occur within the cat's body (e.g., biochemical reactions). These interactions effectively "observe" the state of the cat, breaking the superposition long before a human opens the box. Observation doesn't require human consciousness; it merely involves a physical interaction that localizes the wave function.
+                </p>
+            </article>
+        </section>
+        
+        <!-- Hobbies Section -->
+        <section id="hobbies" style="display: none;">
+            <h2>Hobbies</h2>
+            <p>
+                My hobbies include:
+                <ul>
+                    <li>Engaging in deep discussions about advanced scientific concepts, especially physics and astronomy.</li>
+                    <li>Formulating theories and exploring thought experiments.</li>
+                    <li>Reading scientific literature to understand the cutting edge of research in quantum mechanics and cosmology.</li>
+                </ul>
+            </p>
+        </section>
+        
+        <!-- Inspirations Section -->
+        <section id="inspirations" style="display: none;">
+            <h2>Inspirations</h2>
+            <p>
+                I draw inspiration from:
+                <ul>
+                    <li><strong>Albert Einstein:</strong> His work on relativity and his ability to think beyond conventional limits inspire me to challenge existing ideas.</li>
+                    <li><strong>Richard Feynman:</strong> His approach to teaching, problem-solving, and understanding quantum mechanics is a model for my learning process.</li>
+                    <li><strong>Stephen Hawking:</strong> His contributions to black hole physics and cosmology motivate me to explore the mysteries of the universe.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Sri Kalyan Umasankar. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
